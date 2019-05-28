@@ -51,63 +51,44 @@ else {
 	alert ('佩青愛等紅綠燈');
 }
 */
-
-
-// JQ
-$('#button').on('click',function(e)){
-	var a = $('#input').val();
-	var dum = '佩青';
-
-	if (a == 0)
-	{
-		alert ('佩青吃芒果');
-	}
-	else if (a == 1)
-	{
-		alert ('佩青吃芭樂');
-	}
-
-	else 
-	{
-		alert ('佩青不吃');
-	}
-}
-	/*switch (a)
-	{
-		case '0':
-			alert(dum + '芒果');
-			break;
-		case '1':
-			alert(dum + '芭樂');
-			break;
-		default:
-			alert(dum + '不吃');
-			break;
-	}
-*/
 /*
-//20190515作業
-$('#button').on('click',function(e)){
-	var a = $('#input').val();
+// JQ
+$('#button').on('click', function(e) {
+    var a = $('#input').val();
+    var dum = '佩青';
 
-		if (a=='apple')
-		{
-			alert ('蘋果');
-		}
-
-		else if (a=='banana');
-		{
-			alert('香蕉');
-		}
-
-		else if (a=='peach');
-		{
-			alert('桃子');
-		}
-
-		else {
-			alert('不知道');
-		}
-
+    if (a == 0) {
+        alert('佩青吃芒果');
+    } else if (a == 1) {
+        alert('佩青吃芭樂');
+    } else {
+        alert('佩青不吃');
+    }
+});
+switch (a) {
+    case '0':
+        alert(dum + '芒果');
+        break;
+    case '1':
+        alert(dum + '芭樂');
+        break;
+    default:
+        alert(dum + '不吃');
+        break;
 }
+*/
 
+//20190515作業
+$('#button').on('click', function(e) {
+    var a = $('#input').val();
+
+    if (a == 'apple') {
+        alert('蘋果');
+    } else if (a == 'banana') {
+        alert('香蕉');
+    } else if (a == 'peach') {
+        alert('桃子');
+    } else {
+        alert('不知道');
+    }
+});
