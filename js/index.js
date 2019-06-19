@@ -72,7 +72,7 @@ switch (a) {
     case '1':
         alert(dum + '芭樂');
         break;
-    default:
+    defalit:
         alert(dum + '不吃');
         break;
 }
