@@ -126,6 +126,8 @@ function checkout() {
 
 //join只會用在陣列
 */
+
+/*
 var distance = 1000;
 var num = 0;
 setInterval(function() {
@@ -136,3 +138,32 @@ function plus() {
     this.num = this.num + 1;
     console.log(this.num);
 }
+*/
+var num = 20;
+var x = 0;
+var timer = setInterval(function() {
+    countdown();
+
+    x = Math.random() * 600;
+    $('#cube').css({
+        top: x + 'px',
+        left: x + 'px',
+    });
+}, 1000);
+
+function countdown() {
+    this.num = this.num - 1;
+    console.log(this.num);
+    if (this.num <= 0) {
+        clearInterval(timer);
+        alert('You lose...');
+        $('#cube').css({
+        	display:'none',
+        });
+    }
+}
+
+$('#cube').on('click', function() {
+    clearInterval(timer);
+    alert('Good job!(' + (20 - num) + ')');
+});
