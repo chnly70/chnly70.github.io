@@ -141,15 +141,17 @@ function plus() {
 */
 var num = 20;
 var x = 0;
+var y = 0;
 var timer = setInterval(function() {
     countdown();
 
     x = Math.random() * 600;
+    y = Math.random() * 600;
     $('#cube').css({
-        top: x + 'px',
+        top: y + 'px',
         left: x + 'px',
     });
-}, 1000);
+}, 500);
 
 function countdown() {
     this.num = this.num - 1;
