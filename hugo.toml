@@ -1,0 +1,5 @@
+baseURL = 'https://chnly70.github.io/'
+languageCode = 'zh-tw'
+title = "Chnly70's Site"
+theme = 'ananke'
+publishDir = "docs"
